@@ -1,0 +1,9 @@
+version: '3'
+services:
+  java_app:
+    container_name: java
+    image: java-java-app:latest
+    ports:
+      - 8888:8080
+    volumes:
+      - ./weile-flowable-0.0.1-SNAPSHOT.jar:/usr/app/my-app.jar
